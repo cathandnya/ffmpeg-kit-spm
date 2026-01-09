@@ -3,9 +3,9 @@
 
 import PackageDescription
 
-let release = "min.v5.1.2.7"
+let release = "min.v5.1.2.8"
 
-let frameworks = ["ffmpegkit": "1e4d0c80cd3af9a88682df4de6e261717820d09bd4dbb34fe143b8ad21023d06", "libavcodec": "5457510c64a4e7fa3a6da73b091d9068af2fb587cb865588e226ba0651d606bb", "libavdevice": "cfa27986c72ba39a8d85a9f0af9a8bdb06afd3f401a5a06967d4099541f523ab", "libavfilter": "f2e905ad68a328f5966e714106350bac852fd7c527754cd5aa1d5330b189fc74", "libavformat": "cc2351ed2dc11a10975147b8b720b11312b4fa54b5c6521822db9644e0d9adf7", "libavutil": "c004468f9ccfccf029cd7a12bbf7acc908b3965e70b68e97ed8aa6fdd228ac58", "libswresample": "579b6d83cef796f76b3efb719d7640128b59b89ab8114bcfdf4f1c7b910fa36a", "libswscale": "ed26fb4bd4648a8e391a3818f958efccbdd8a2bc45e1eca14a9cbf561167ca4c"]
+let frameworks = ["ffmpegkit": "5a38f362bc0dc8b2fa0edbf01189e1d39ea77a9e5b8692a95d302c0220119299", "libavcodec": "1a30e952cc81699c65af1adedbb87c43678991624166ba2d2ca2d95608c8f36f", "libavdevice": "8c3978629ea47cc100ab64fb52490d579fed64252a0dbca1afefad484ebba5fc", "libavfilter": "438936201e18cbf332ab088639c4885c8e106fa7b55aeab2f3bd32d6fc0da32e", "libavformat": "6f355bda13284de53cd86f8bcf18cc766bc8d9af1396c1ee27f43f3e39d29d42", "libavutil": "84edfe96c394d55d9f341d60a71b6e1cb428259621a3e353990e3fce4232be60", "libswresample": "12512a738865629d2b7c265bd1489ed90f03d348c94726f798c8593c2e31db6c", "libswscale": "ad3d2bcedd45ff33e26e55bcdf79898dae20bd4bad394b6116e2d6aecc8c147e"]
 
 func xcframework(_ package: Dictionary<String, String>.Element) -> Target {
     let url = "https://github.com/cathandnya/ffmpeg-kit-spm/releases/download/\(release)/\(package.key).xcframework.zip"
